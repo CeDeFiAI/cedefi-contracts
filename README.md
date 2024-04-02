@@ -30,8 +30,11 @@ Below are the key resources, including smart contract addresses and relevant lin
 
 - **Team Wallet Address:**
   - [0x0046a6aF250d32C35811464B53E448820B7e888a](https://polygonscan.com/address/0x0046a6aF250d32C35811464B53E448820B7e888a)
+
+- **TeamVesting Contract on Polygon:**
+  - [Polygonscan Link](https://polygonscan.com/address/0xCac9B7C9e6b4B8F06A0Dee55910593969996434F)
   
-- **Additional Contract on Polygon:**
+- **LiquidityVesting Contract on Polygon:**
   - [Polygonscan Link](https://polygonscan.com/address/0xD8AF17237cFeCba31D951b94797Ca31810C5870D)
 
 ## Project Structure
