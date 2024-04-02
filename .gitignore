@@ -1,0 +1,22 @@
+node_modules
+build
+artifacts
+yarn-error.log
+local.json
+gasLogs.json
+.env
+.vscode
+node_modules
+.env
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
