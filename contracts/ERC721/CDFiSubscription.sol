@@ -353,16 +353,14 @@ contract CDFiSubscription is ERC721URIStorage, Ownable {
         IERC20Extended token1Contract = IERC20Extended(token1);
         uint8 decimalsToken0 = token0Contract.decimals();
         uint8 decimalsToken1 = token1Contract.decimals();
-        uint256 factor = 10 ** (decimalsToken0 + decimalsToken1);
         uint256 price = (uint256(sqrtPriceX96) *
             uint256(sqrtPriceX96) *
-            factor);
+            10 ** decimalsToken0);
         price = price >> 192; //remove precision
-        price = price / 10 ** decimalsToken1;
         uint256 result;
 
         if (token0 == addressCDFi) {
-            result = priceInUsd * discount * factor;
+            result = priceInUsd * discount * (10 ** (decimalsToken1 + decimalsToken0)) ;
             result = result / price / 100;
         }
         if (token1 == addressCDFi) {
