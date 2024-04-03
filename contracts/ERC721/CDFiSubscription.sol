@@ -360,7 +360,7 @@ contract CDFiSubscription is ERC721URIStorage, Ownable {
         uint256 result;
 
         if (token0 == addressCDFi) {
-            result = priceInUsd * discount * (10 ** (decimalsToken1 + decimalsToken0)) ;
+            result = priceInUsd * discount * (10 ** (decimalsToken1 + decimalsToken0));
             result = result / price / 100;
         }
         if (token1 == addressCDFi) {
