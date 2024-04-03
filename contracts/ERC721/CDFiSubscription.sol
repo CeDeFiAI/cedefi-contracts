@@ -130,7 +130,7 @@ contract CDFiSubscription is ERC721URIStorage, Ownable {
     ) external payable returns (bool) {
         uint256 usdValue = (msg.value * getNativePrice()) / MULTIPLIER;
         require(
-            usdValue >= priceInUsd,
+            usdValue >= priceInUsd * 1e18, 
             "Native value should be equal or bigger subscription price!"
         );
         _mintSubWithMetadata(_msgSender(), tokenId, uri, additionalUri);
