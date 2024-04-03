@@ -22,6 +22,7 @@ contract CDFiSubscription is ERC721URIStorage, Ownable {
 
     uint256 public constant HOUR = 3600;
     uint256 public constant MULTIPLIER = 1e8; //chainlink price multiplier
+    uint256 public constant DECIMALS = 1e18; // ether decimals
     uint256 public priceInUsd = 400;
     uint256 public maxSupply = 10000;
     uint256 public totalMinted;
@@ -130,10 +131,18 @@ contract CDFiSubscription is ERC721URIStorage, Ownable {
     ) external payable returns (bool) {
         uint256 usdValue = (msg.value * getNativePrice()) / MULTIPLIER;
         require(
-            usdValue >= priceInUsd * 1e18, 
+            usdValue >= priceInUsd * DECIMALS,
             "Native value should be equal or bigger subscription price!"
         );
         _mintSubWithMetadata(_msgSender(), tokenId, uri, additionalUri);
+        if (msg.value > priceInUsd * DECIMALS) {
+            // Calculate the excess amount
+            uint256 excessAmount = msg.value - (priceInUsd * DECIMALS);
+            address payable payableRecipient = payable(_msgSender());
+            // Return the excess amount to the user
+            (bool sent, ) = payableRecipient.call{value: excessAmount}("");
+            require(sent, "Failed to send excess amount");
+        }
         return true;
     }
 
