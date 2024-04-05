@@ -12,8 +12,8 @@ Below are the key resources, including smart contract addresses and relevant lin
 
 ### Smart Contracts
 
-- **CDFi Token Contract on Polygon:**
-  - Address: [0xb7C0A627b0d81774B46e7880a0EA58e41B450BBB](https://polygonscan.com/address/0xb7C0A627b0d81774B46e7880a0EA58e41B450BBB#code)
+- **CDFi Token Contract:**
+  - Address: [0x527856315a4bCD2F428EA7fA05ea251f7e96A50A](https://polygonscan.com/address/0x527856315a4bCD2F428EA7fA05ea251f7e96A50A)
 
 ### Uniswap Pools V3
 
