@@ -32,10 +32,13 @@ Below are the key resources, including smart contract addresses and relevant lin
   - [0x0046a6aF250d32C35811464B53E448820B7e888a](https://polygonscan.com/address/0x0046a6aF250d32C35811464B53E448820B7e888a)
 
 - **TeamVesting Contract on Polygon:**
-  - [Polygonscan Link](https://polygonscan.com/address/0xCac9B7C9e6b4B8F06A0Dee55910593969996434F)
+  - [Polygonscan Link](https://polygonscan.com/address/0x8f5a4D3315bdb4E8dbf887F5A3bD5cce622c13Cb)
   
 - **LiquidityVesting Contract on Polygon:**
-  - [Polygonscan Link](https://polygonscan.com/address/0xD8AF17237cFeCba31D951b94797Ca31810C5870D)
+  - [Polygonscan Link](https://polygonscan.com/address/0x84466525F2a32AfFE3D1264Dd8e1AEa61bccf477)
+
+- **TokenLock Contract on Polygon:**
+  - [Polygonscan Link](https://polygonscan.com/address/0x7b97c0D4815921544A627db5c20323BAbDB9afC2)
 
 ## Project Structure
 
