@@ -18,13 +18,16 @@ Below are the key resources, including smart contract addresses and relevant lin
 ### Uniswap Pools V3
 
 - **Ethereum CDFi/USDT Pool:**
-  - [Etherscan Link](https://etherscan.io/address/0x25B2Be69272cAe9ABe33bB6B82491a1Ca91dF153)
+  - [Etherscan Link](https://etherscan.io/address/0x2E9AE86Be593867fF0e8DB75AaB4e5BeBAfd1679)
   
 - **BSC CDFi/USDT Pool:**
-  - [BscScan Link](https://bscscan.com/address/0x6639986CBEbe3933Ba97d4510CFD7556e0Db8E2e)
+  - [BscScan Link](https://bscscan.com/address/0x4178Dd7eB2eb983ba7f7e41648CF91DB6bE20190)
   
 - **Polygon CDFi/USDT Pool:**
-  - [Polygonscan Link](https://polygonscan.com/address/0x57aA271dF20bf4D1b80DaD5b04592005e8A194ea)
+  - [Polygonscan Link](https://polygonscan.com/address/0x3ee99801308c852c79aEBF51296E8B7407544f90)
+
+- **Avalanche C-chain CDFi/USDT Pool:**
+  - [Snowtrace Link](https://snowtrace.io/address/0x5cC6e210e5B8E1bEE20003ecF8A276C4E8bfc918)
 
 ### Additional Resources
 

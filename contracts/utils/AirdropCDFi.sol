@@ -17,6 +17,7 @@ contract AirdropCDFi is Ownable {
     function distributeTokens(address[] memory recipients, uint256[] memory amounts) external onlyOwner {
         require(recipients.length == amounts.length, "Mismatched arrays");
         require(!distributed, "Distribution allowed only once!");
+        distributed = true;
         
         for (uint256 i = 0; i < recipients.length; i++) {
             token.safeTransfer(recipients[i], amounts[i]);
