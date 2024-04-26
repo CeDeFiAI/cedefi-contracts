@@ -9,7 +9,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-
 abstract contract IERC20Extended is IERC20 {
     function decimals() public view virtual returns (uint8);
 }
@@ -358,7 +357,7 @@ contract CDFiSubscription is ERC721URIStorage, Ownable {
             10 ** decimalsToken0);
         price = price >> 192; //remove precision
         uint256 result;
-
+    
         if (token0 == addressCDFi) {
             result = priceInUsd * discount * (10 ** (decimalsToken1 + decimalsToken0));
             result = result / price / 100;
@@ -424,4 +423,6 @@ contract CDFiSubscription is ERC721URIStorage, Ownable {
     function _getChainId() private view returns (uint256) {
         return block.chainid;
     }
+
+    receive() external payable{}
 }
