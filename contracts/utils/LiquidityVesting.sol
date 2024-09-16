@@ -123,4 +123,6 @@ contract LiquidityVesting is Ownable {
         uint256 availableTokens = vested - withdrawnTokens;
         return availableTokens;
     }
+
+    receive() external payable{}
 }
